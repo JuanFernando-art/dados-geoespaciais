@@ -1,0 +1,20 @@
+{
+  "type": "FeatureCollection",
+  "features": [
+    {
+      "type": "Feature",
+      "properties": {
+        "id": 1,
+        "nome": "Rota Centro"
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-46.6339, -23.5505],
+          [-46.6566, -23.5615],
+          [-46.6586, -23.5872]
+        ]
+      }
+    }
+  ]
+}

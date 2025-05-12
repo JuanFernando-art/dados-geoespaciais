@@ -1,0 +1,326 @@
+<!DOCTYPE html>
+<html>
+<head>
+    
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+    
+        <script>
+            L_NO_TOUCH = false;
+            L_DISABLE_3D = false;
+        </script>
+    
+    <style>html, body {width: 100%;height: 100%;margin: 0;padding: 0;}</style>
+    <style>#map {position:absolute;top:0;bottom:0;right:0;left:0;}</style>
+    <script src="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.js"></script>
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap-glyphicons.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.2.0/css/all.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/python-visualization/folium/folium/templates/leaflet.awesome.rotate.min.css"/>
+    
+            <meta name="viewport" content="width=device-width,
+                initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+            <style>
+                #map_1eaaa7d4bc6bb3a79e2d63e72f2e6d97 {
+                    position: relative;
+                    width: 100.0%;
+                    height: 100.0%;
+                    left: 0.0%;
+                    top: 0.0%;
+                }
+                .leaflet-container { font-size: 1rem; }
+            </style>
+        
+</head>
+<body>
+    
+    
+            <div class="folium-map" id="map_1eaaa7d4bc6bb3a79e2d63e72f2e6d97" ></div>
+        
+</body>
+<script>
+    
+    
+            var map_1eaaa7d4bc6bb3a79e2d63e72f2e6d97 = L.map(
+                "map_1eaaa7d4bc6bb3a79e2d63e72f2e6d97",
+                {
+                    center: [-23.5574631, -46.647313399999994],
+                    crs: L.CRS.EPSG3857,
+                    ...{
+  "zoom": 12,
+  "zoomControl": true,
+  "preferCanvas": false,
+}
+
+                }
+            );
+
+            
+
+        
+    
+            var tile_layer_0c84d5605d664696e6b5303983a798bd = L.tileLayer(
+                "https://tile.openstreetmap.org/{z}/{x}/{y}.png",
+                {
+  "minZoom": 0,
+  "maxZoom": 19,
+  "maxNativeZoom": 19,
+  "noWrap": false,
+  "attribution": "\u0026copy; \u003ca href=\"https://www.openstreetmap.org/copyright\"\u003eOpenStreetMap\u003c/a\u003e contributors",
+  "subdomains": "abc",
+  "detectRetina": false,
+  "tms": false,
+  "opacity": 1,
+}
+
+            );
+        
+    
+            tile_layer_0c84d5605d664696e6b5303983a798bd.addTo(map_1eaaa7d4bc6bb3a79e2d63e72f2e6d97);
+        
+    
+            var marker_4de014a7c3e15757fe220181bb2331c5 = L.marker(
+                [-23.55052, -46.633308],
+                {
+}
+            ).addTo(map_1eaaa7d4bc6bb3a79e2d63e72f2e6d97);
+        
+    
+        var popup_d54c777792e01d98f2d66003ba800023 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_eb7b435c8c484e1f3f37c9064d112553 = $(`<div id="html_eb7b435c8c484e1f3f37c9064d112553" style="width: 100.0%; height: 100.0%;">Praça Central</div>`)[0];
+                popup_d54c777792e01d98f2d66003ba800023.setContent(html_eb7b435c8c484e1f3f37c9064d112553);
+            
+        
+
+        marker_4de014a7c3e15757fe220181bb2331c5.bindPopup(popup_d54c777792e01d98f2d66003ba800023)
+        ;
+
+        
+    
+    
+            var marker_0cc3d2fa662a594fefebc3baa12396df = L.marker(
+                [-23.559616, -46.658212],
+                {
+}
+            ).addTo(map_1eaaa7d4bc6bb3a79e2d63e72f2e6d97);
+        
+    
+        var popup_7239e57e066ff73bd873956cbd5ec97a = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_2c4340196a08e50c62a0c5b39ba2c868 = $(`<div id="html_2c4340196a08e50c62a0c5b39ba2c868" style="width: 100.0%; height: 100.0%;">Parque da Cidade</div>`)[0];
+                popup_7239e57e066ff73bd873956cbd5ec97a.setContent(html_2c4340196a08e50c62a0c5b39ba2c868);
+            
+        
+
+        marker_0cc3d2fa662a594fefebc3baa12396df.bindPopup(popup_7239e57e066ff73bd873956cbd5ec97a)
+        ;
+
+        
+    
+    
+            var marker_08cc034a5cce16f6efd633402241e440 = L.marker(
+                [-23.561684, -46.655981],
+                {
+}
+            ).addTo(map_1eaaa7d4bc6bb3a79e2d63e72f2e6d97);
+        
+    
+        var popup_51d9e0d7b46beeec9343da27bcc809f6 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_a9598351da6972513ccff776110cb14e = $(`<div id="html_a9598351da6972513ccff776110cb14e" style="width: 100.0%; height: 100.0%;">Museu de Arte</div>`)[0];
+                popup_51d9e0d7b46beeec9343da27bcc809f6.setContent(html_a9598351da6972513ccff776110cb14e);
+            
+        
+
+        marker_08cc034a5cce16f6efd633402241e440.bindPopup(popup_51d9e0d7b46beeec9343da27bcc809f6)
+        ;
+
+        
+    
+    
+            var marker_38b7772df9ff427b625552a6a42e9ae4 = L.marker(
+                [-23.555001, -46.64],
+                {
+}
+            ).addTo(map_1eaaa7d4bc6bb3a79e2d63e72f2e6d97);
+        
+    
+        var popup_71dcd5f403ab07f9f76a206947c0ead3 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_c3fcc069748f5ea32b740c6e36181748 = $(`<div id="html_c3fcc069748f5ea32b740c6e36181748" style="width: 100.0%; height: 100.0%;">Biblioteca Municipal</div>`)[0];
+                popup_71dcd5f403ab07f9f76a206947c0ead3.setContent(html_c3fcc069748f5ea32b740c6e36181748);
+            
+        
+
+        marker_38b7772df9ff427b625552a6a42e9ae4.bindPopup(popup_71dcd5f403ab07f9f76a206947c0ead3)
+        ;
+
+        
+    
+    
+            var marker_df2b1e366585fa322bbf9b7c0fbf1f60 = L.marker(
+                [-23.5585, -46.645],
+                {
+}
+            ).addTo(map_1eaaa7d4bc6bb3a79e2d63e72f2e6d97);
+        
+    
+        var popup_1d75a77350d30a8814f171c68f67af8d = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_58e15e5550db93664df9ebf7ead1b454 = $(`<div id="html_58e15e5550db93664df9ebf7ead1b454" style="width: 100.0%; height: 100.0%;">Estádio Municipal</div>`)[0];
+                popup_1d75a77350d30a8814f171c68f67af8d.setContent(html_58e15e5550db93664df9ebf7ead1b454);
+            
+        
+
+        marker_df2b1e366585fa322bbf9b7c0fbf1f60.bindPopup(popup_1d75a77350d30a8814f171c68f67af8d)
+        ;
+
+        
+    
+    
+            var marker_02ea9dee9cf9c01f4a73ee730bfee7dc = L.marker(
+                [-23.55321, -46.6475],
+                {
+}
+            ).addTo(map_1eaaa7d4bc6bb3a79e2d63e72f2e6d97);
+        
+    
+        var popup_031b1535ea1f63ba4ea06c8ced286f8d = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_5bbf711861ff9782098c154055727b64 = $(`<div id="html_5bbf711861ff9782098c154055727b64" style="width: 100.0%; height: 100.0%;">Teatro Popular</div>`)[0];
+                popup_031b1535ea1f63ba4ea06c8ced286f8d.setContent(html_5bbf711861ff9782098c154055727b64);
+            
+        
+
+        marker_02ea9dee9cf9c01f4a73ee730bfee7dc.bindPopup(popup_031b1535ea1f63ba4ea06c8ced286f8d)
+        ;
+
+        
+    
+    
+            var marker_6af2d4f44502efc45c00b460619e9a66 = L.marker(
+                [-23.557, -46.659999],
+                {
+}
+            ).addTo(map_1eaaa7d4bc6bb3a79e2d63e72f2e6d97);
+        
+    
+        var popup_1670e7b7b6b074d65d00fdbb82146b76 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_95d9569be6f5239ef271d05020310371 = $(`<div id="html_95d9569be6f5239ef271d05020310371" style="width: 100.0%; height: 100.0%;">Universidade Federal</div>`)[0];
+                popup_1670e7b7b6b074d65d00fdbb82146b76.setContent(html_95d9569be6f5239ef271d05020310371);
+            
+        
+
+        marker_6af2d4f44502efc45c00b460619e9a66.bindPopup(popup_1670e7b7b6b074d65d00fdbb82146b76)
+        ;
+
+        
+    
+    
+            var marker_f3e8ddc577fd43f1aaa9a8d8afb4fa30 = L.marker(
+                [-23.5607, -46.651234],
+                {
+}
+            ).addTo(map_1eaaa7d4bc6bb3a79e2d63e72f2e6d97);
+        
+    
+        var popup_65017ff6af2bb2abd3373dcd66a793e0 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_c629a7edc2aab3e8905c66d366523593 = $(`<div id="html_c629a7edc2aab3e8905c66d366523593" style="width: 100.0%; height: 100.0%;">Terminal Rodoviário</div>`)[0];
+                popup_65017ff6af2bb2abd3373dcd66a793e0.setContent(html_c629a7edc2aab3e8905c66d366523593);
+            
+        
+
+        marker_f3e8ddc577fd43f1aaa9a8d8afb4fa30.bindPopup(popup_65017ff6af2bb2abd3373dcd66a793e0)
+        ;
+
+        
+    
+    
+            var marker_2bb248b31abfb3adaa7f202989f8650b = L.marker(
+                [-23.5621, -46.643],
+                {
+}
+            ).addTo(map_1eaaa7d4bc6bb3a79e2d63e72f2e6d97);
+        
+    
+        var popup_5b788aeaee93d556c70dfb8b74be434e = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_bea19d7a4d4f4822d007dab60e89156e = $(`<div id="html_bea19d7a4d4f4822d007dab60e89156e" style="width: 100.0%; height: 100.0%;">Estação Central</div>`)[0];
+                popup_5b788aeaee93d556c70dfb8b74be434e.setContent(html_bea19d7a4d4f4822d007dab60e89156e);
+            
+        
+
+        marker_2bb248b31abfb3adaa7f202989f8650b.bindPopup(popup_5b788aeaee93d556c70dfb8b74be434e)
+        ;
+
+        
+    
+    
+            var marker_8a1eb91b946ba0d44df63cd0ae76fc5a = L.marker(
+                [-23.5563, -46.6389],
+                {
+}
+            ).addTo(map_1eaaa7d4bc6bb3a79e2d63e72f2e6d97);
+        
+    
+        var popup_f05172708124ab5d6e20274bd5fd4ae4 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_7bc0c9df2894f1ecd0e1a910f44ae046 = $(`<div id="html_7bc0c9df2894f1ecd0e1a910f44ae046" style="width: 100.0%; height: 100.0%;">Shopping Center</div>`)[0];
+                popup_f05172708124ab5d6e20274bd5fd4ae4.setContent(html_7bc0c9df2894f1ecd0e1a910f44ae046);
+            
+        
+
+        marker_8a1eb91b946ba0d44df63cd0ae76fc5a.bindPopup(popup_f05172708124ab5d6e20274bd5fd4ae4)
+        ;
+
+        
+    
+</script>
+</html>
