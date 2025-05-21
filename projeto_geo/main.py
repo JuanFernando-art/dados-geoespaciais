@@ -1,7 +1,6 @@
 import tkinter as tk
 from tkinter import filedialog, messagebox, ttk
-from cefpython3 import cefpython as cef
-import sys
+import webbrowser
 import os
 
 from data_processor import DataProcessor
@@ -24,9 +23,6 @@ class GeoApp:
         tk.Button(control_frame, text="Carregar CSV", command=lambda: self.load_file("csv")).pack(side=tk.LEFT, padx=5)
         tk.Button(control_frame, text="Carregar JSON", command=lambda: self.load_file("json")).pack(side=tk.LEFT, padx=5)
         tk.Button(control_frame, text="Carregar XML", command=lambda: self.load_file("xml")).pack(side=tk.LEFT, padx=5)
-
-        self.browser_frame = tk.Frame(self.root, height=500)
-        self.browser_frame.pack(fill=tk.BOTH, expand=True)
 
         self.table_frame = tk.Frame(self.root)
         self.table_frame.pack(fill=tk.BOTH, expand=True)
@@ -53,21 +49,12 @@ class GeoApp:
             gdf = self.processor.get_data()
 
             html_path = Visualizer.plot_folium(gdf)
+            webbrowser.open(f"file://{os.path.abspath(html_path)}")
 
-            self.embed_map(html_path)
             self.display_table(gdf)
 
         except Exception as e:
             messagebox.showerror("Erro", f"Falha ao carregar arquivo:\n{str(e)}")
-
-    def embed_map(self, filepath):
-        for widget in self.browser_frame.winfo_children():
-            widget.destroy()
-
-        window_info = cef.WindowInfo()
-        window_info.SetAsChild(self.browser_frame.winfo_id(), [0, 0, 1000, 500])
-        cef.CreateBrowserSync(window_info, url="file://" + filepath)
-        self.browser_frame.update()
 
     def display_table(self, gdf):
         for widget in self.table_frame.winfo_children():
@@ -88,19 +75,9 @@ class GeoApp:
         tree.pack(fill=tk.BOTH, expand=True)
 
 def main():
-    sys.excepthook = cef.ExceptHook
-    cef.Initialize()
-
     root = tk.Tk()
     app = GeoApp(root)
-
-    def loop():
-        cef.MessageLoopWork()
-        root.after(10, loop)
-
-    root.after(10, loop)
     root.mainloop()
-    cef.Shutdown()
 
 if __name__ == "__main__":
     main()
